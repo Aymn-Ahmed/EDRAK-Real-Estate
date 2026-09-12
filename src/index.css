@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Exact Deep Teal-Green Colors from User Image */
+:root {
+  --color-teal-dark: #074438;
+  --color-teal-mid: #0B5647;
+  --color-teal-light: #0E6C5A;
+  --color-gold: #D97706;
+}
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+.hero-teal-bg {
+  background: linear-gradient(135deg, #05362C 0%, #074438 50%, #0B5647 100%);
+}
+
+.glass-card-teal {
+  background: rgba(11, 86, 71, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(7, 68, 56, 0.4);
+}
+
+.glass-card-teal-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-teal-hover:hover {
+  background: rgba(14, 108, 90, 0.85);
+  border-color: rgba(45, 212, 191, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(7, 68, 56, 0.6);
+}
+
+.emerald-gradient-text {
+  background: linear-gradient(135deg, #2DD4BF 0%, #34D399 50%, #FBBF24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05362C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0E6C5A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2DD4BF;
+}
