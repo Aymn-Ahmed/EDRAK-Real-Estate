@@ -1,6 +1,21 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+dist-ssr/
+*.local
+
+# Environment variables
 .env
 .env.local
 .env.*.local
+
+# TypeScript cache
 tsconfig.tsbuildinfo
+
+# OS & Editor files
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
